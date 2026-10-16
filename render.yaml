@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: babbu-katiya-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: BOT_PASSWORD
+        value: BabbuPass123
+      - key: SERVER_HOST
+        value: sorrypen.aternos.me
+      - key: SERVER_PORT
+        value: 34747
+      - key: BOT_NAME
+        value: babbu_katiya
